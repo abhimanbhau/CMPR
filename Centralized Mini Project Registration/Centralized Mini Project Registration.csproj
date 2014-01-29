@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{120A64C7-39B8-4B39-B45D-EB94C71903F0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Centralized_Mini_Project_Registration</RootNamespace>
+    <AssemblyName>Centralized Mini Project Registration</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Centralized_Mini_Project_Registration.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MetroFramework, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\ModernUI.1.1.0.1\lib\net20\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutMeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutMeForm.Designer.cs">
+      <DependentUpon>AboutMeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminControlPanelForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminControlPanelForm.Designer.cs">
+      <DependentUpon>AdminControlPanelForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminHomeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminHomeForm.Designer.cs">
+      <DependentUpon>AdminHomeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminReportGenerationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminReportGenerationForm.Designer.cs">
+      <DependentUpon>AdminReportGenerationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainWindowForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainWindowForm.Designer.cs">
+      <DependentUpon>MainWindowForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegistrationMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistrationMainForm.Designer.cs">
+      <DependentUpon>RegistrationMainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegistrationRecieptForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistrationRecieptForm.Designer.cs">
+      <DependentUpon>RegistrationRecieptForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentWarningDialogueBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentWarningDialogueBox.Designer.cs">
+      <DependentUpon>StudentWarningDialogueBox.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AboutMeForm.resx">
+      <DependentUpon>AboutMeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminControlPanelForm.resx">
+      <DependentUpon>AdminControlPanelForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminHomeForm.resx">
+      <DependentUpon>AdminHomeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminReportGenerationForm.resx">
+      <DependentUpon>AdminReportGenerationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainWindowForm.resx">
+      <DependentUpon>MainWindowForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="RegistrationMainForm.resx">
+      <DependentUpon>RegistrationMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistrationRecieptForm.resx">
+      <DependentUpon>RegistrationRecieptForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentWarningDialogueBox.resx">
+      <DependentUpon>StudentWarningDialogueBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Abhimanbhau.CMPR.DGList\Abhimanbhau.CMPR.DGList.csproj">
+      <Project>{8880518f-0f5c-49cf-a685-6f1a8fe5a7d0}</Project>
+      <Name>Abhimanbhau.CMPR.DGList</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Abhimanbhau.CMPR.DivisionList\Abhimanbhau.CMPR.BranchDivList.csproj">
+      <Project>{f9427b2c-2c71-4799-97f7-4860d2eedd20}</Project>
+      <Name>Abhimanbhau.CMPR.BranchDivList</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Abhimanbhau.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Icon.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
